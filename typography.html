@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typography Principles</title>
+
+    <style>
+      /*
+        All elements will now have a line height height of 140% of thier font size applied to all
+        text as well as all text will use the Verdana font family first, then tahoma if verdana 
+        doesn't work and then if both don't work, it uses sans-serif
+        */
+      * {
+        line-height: 140%;
+        font-family: Verdana, Tahoma, sans-serif;
+      }
+      /*
+          This styles the entire website to have a background color of #fbfbfe and styles all the 
+          text on the website to have a color of #17230b, changes the 
+          font size to 22px and changes the letter spacing to 2px
+        */
+      body {
+        background-color: #fbfbfe;
+        color: #17230b;
+        font-size: 22px;
+        letter-spacing: 2px;
+      }
+      /*
+        This styles all main headings to be center aligned, changes font size to 52px, only use
+        uppercase letters, and underline text
+      */
+      h1 {
+        text-align: center;
+        font-size: 52px;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+      h3 {
+        font-size: 30px;
+      }
+      ul {
+        list-style: none;
+      }
+      li {
+        padding: 5px;
+        margin: 4px;
+        font-size: 20px;
+      }
+      .nav-link {
+        padding: 5px;
+        margin: 4px;
+        border: 2px solid black;
+        background-color: #003100;
+        color: #eeffee;
+      }
+      .nav-link li {
+        display: inline-block;
+      }
+      #bold {
+        font-weight: bold;
+      }
+      #italicised {
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <a href="index.html" class="nav-link"><li>Inline CSS</li></a>
+          <a href="internal-css.html" class="nav-link"><li>Internal CSS</li></a>
+          <a href="external-css.html" class="nav-link"><li>External CSS</li></a>
+          <a href="testing-cascading.html" class="nav-link">
+            <li>Testing Cascading page</li>
+          </a>
+          <a href="classes-and-ids.html" class="nav-link">
+            <li>Classes and IDs</li>
+          </a>
+          <a href="div-and-span.html" class="nav-link">
+            <li>Divs and Spans</li>
+          </a>
+        </ul>
+      </nav>
+      <h1>Typography Principles</h1>
+    </header>
+
+    <main>
+      <h3>This page shows my understanding of typograhpic principles</h3>
+
+      <p>
+        This page is styled in sans-serif fonts to give it a more modern feel
+      </p>
+      <p>
+        This paragraph has <span id="bold">bold text</span>, and it has
+        <span id="italicised">italicised text</span>
+      </p>
+    </main>
+  </body>
+</html>
